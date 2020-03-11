@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title> Máquina de Coca-Cola </title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.8">
+		<link rel="icon" href="pics/icon.jpg">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/classes.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans|Roboto|Russo+One|Raleway"/>
+ 
+	</head>
+	
+	<body>
+	
+		<div id="pageWrapper">
+	
+			<div id="sizeWrapper">
+			
+				<div id="head">
+				
+					<div id="logoArea">
+				
+						<img src="pics/cc.jpg" id="logo"/>
+						
+					</div> <!-- close logoArea -->
+					
+					<div id="headerText">
+
+						<p class="info"> &nbsp;<b>&#8250;</b> &nbsp;Uma garrafa de Coca-Cola custa 45&#162;.</p>
+						<p class="info"> &nbsp;<b>&#8250;</b> &nbsp;Aceita apenas moedas de 25&#162; e 10&#162;.</p>
+						<p class="info"> &nbsp;<b>&#8250;</b> &nbsp;Não devolve moedas inseridas.</p>
+						
+					</div> <!-- close headerText -->
+				
+				</div> <!-- close head -->
+				
+				<div id="contentArea">
+				
+					<div id="titleArea"> Principais moedas em circulação nos Estados Unidos &nbsp;&nbsp;-&nbsp;&nbsp; CLIQUE NAS MOEDAS ABAIXO</div>
+				
+					<div id="machineArea">
+					
+						<audio id="sfx1" src="sfx/coinSfx.mp3" autostart="false"></audio>
+					
+						<div class="coinDiv marL noselect">
+							<div class="coinTitleDiv">
+								<p class="coinTitleText"><b>Penny</b></p>
+							</div>
+							<div id="c1" class="coinPic cR pic noselect" onclick="pennyCount(); playSfx1()">
+								<div class="txt1" >1&#162;</div>
+							</div>
+						</div>
+						<div class="coinDiv marL noselect">
+							<div class="coinTitleDiv">
+								<p class="coinTitleText"><b>Nickel</b></p>
+							</div>
+							<div id="c2" class="coinPic cR pic noselect" onclick="nickelCount(); playSfx1()">
+								<div class="txt1">5&#162;</div>
+							</div>
+						</div>
+						<div class="coinDiv marL noselect">
+							<div class="coinTitleDiv">
+								<p class="coinTitleText"><b>Dime</b><p>
+							</div>
+							<div id="c3" class="coinPic cG pic noselect" onclick="dimeCount(); playSfx1()">
+								<div class="txt1">10&#162;</div>
+							</div>
+						</div>
+						<div class="coinDiv marL noselect">
+							<div class="coinTitleDiv">
+								<p class="coinTitleText"><b>Quarter</b></p>
+							</div>
+							<div id="c4" class="coinPic cG pic noselect" onclick="quarterCount(); playSfx1()">
+								<div class="txt1">25&#162;</div>
+							</div>
+						</div>
+
+					</div> <!-- close machineArea -->
+				
+				</div> <!-- close contentArea -->
+				
+				<div id="displayArea">
+				
+					<div class="coinsTotal">
+					
+						<p class="totalTitle"><b>Moedas inseridas</b></p>
+						
+						<p class="totalSide">01&#162;&nbsp; Penny</p><p class="totalSideDash"><b>x</b>&nbsp;&nbsp;</p>&nbsp;
+						<input type="text" id="penny" class="displayBox" value="0" readonly></input>
+						<br>
+						<p class="totalSide">05&#162;&nbsp; Nickel</p><p class="totalSideDash"><b>x</b>&nbsp;&nbsp;</p>&nbsp;
+						<input type="text" id="nickel" class="displayBox" value="0" readonly></input>
+						<br>
+						<p class="totalSide">10&#162;&nbsp; Dime</p><p class="totalSideDash"><b>x</b>&nbsp;&nbsp;</p>&nbsp;
+						<input type="text" id="dime" class="displayBox" value="0" readonly></input>
+						<br>
+						<p class="totalSide">25&#162;&nbsp; Quarter</p><p class="totalSideDash"><b>x</b>&nbsp;&nbsp;</p>&nbsp;
+						<input type="text" id="quarter" class="displayBox" value="0" readonly></input>
+						
+						<audio id="sfx2" src="sfx/delSfx.mp3" autostart="false"></audio>
+						
+					</div>
+					
+					<div class="infoArea">
+					
+						<p class="totalTitle"><b>Informações da máquina</b></p>
+						
+						<p id="" class="infoSide1">Valor total inserido<p class="totalSideDash"><b>:</b></p></p>
+						<p class="infoSide2">US&#36;</p><p id="coinInfo1" class="infoSide3">0</p>
+						<p id="" class="infoSide1">Valor total perdido<p class="totalSideDash"><b>:</b></p></p>
+						<p class="infoSide2">US&#36;</p><p id="coinInfo2" class="infoSide3">0</p>
+						<p id="" class="infoSide1">Valor total em garrafas<p class="totalSideDash"><b>:</b></p></p>
+						<p class="infoSide2">US&#36;</p><p id="coinInfo3" class="infoSide3">0</p>
+		
+					</div>
+					
+					<div class="resultArea">
+					
+						<p class="totalTitle"><b>Resultado</b></p>
+						
+						<div class="bottlePic mt"></div>
+						
+						<div class="xMark noselect"><b>X</b></div>
+						
+						<div class="cokeArea"><p id="cokeAmount" class="displayBox cokeResult">0</p></div>
+
+					</div>
+
+				</div>
+				
+				<button type="button" class="resetButton" onclick="resetCoins(); playSfx2()"></button>
+	 
+			</div> <!-- close sizeWrapper -->
+			
+			<div id="footerArea"> 
+				
+				<div id="footerTop">
+				
+					<p class="pp">UNICID - Linguagens Formais e Autômatos</p>  
+
+				</div> <!-- close footerTop -->
+				
+				<div id="footerBot">
+
+					<p class="aa"> Nome: </p> Gabriel Stefano Camacho  
+					<br>
+					<p class="aa"> RGM: </p> 17294533
+
+				</div> <!-- close footerBot -->
+				
+			</div> <!-- close footerArea -->
+		
+		</div> <!-- close pageWrapper -->
+
+	</body>
+	
+	<script type="text/javascript" src="js/mainCode.js"></script>
+
+</html>
