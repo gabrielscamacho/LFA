@@ -1,0 +1,459 @@
+html {
+	position: relative;
+	height: 100%;
+	min-height: 100%;	
+	background-color: #c4c4c4;
+	font-family: 'Roboto', sans-serif;
+	background-image: url("../pics/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+body {    
+    margin: 50px !important;
+    padding: 0 !important;
+}
+
+.noselect {
+	webkit-user-select: none; 
+	-webkit-touch-callout: none; 
+	-khtml-user-select: none;
+	-moz-user-select: none; 
+	-ms-user-select: none;
+    user-select: none; 
+}
+
+select, select option {
+	color: #000000;
+}
+
+select:invalid, select option[value=""] {
+	color: #757575;
+}
+
+textarea {
+	resize: none;
+}
+
+a:link {
+    color: black; 
+    background-color: transparent; 
+    text-decoration: none;	
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: transparent;
+    text-decoration: none;	
+}
+
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+p {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#clicktop:hover {
+	background-color: #e2d05a;
+	opacity: 1;
+}
+
+#pageWrapper {
+	width: 1000px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+}
+
+#sizeWrapper {
+	width: 1000px;
+	min-height: 100%;
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;		
+	padding-bottom: 83px; /* FOOTER SIZE 240px + EXTRA MARGIN */
+}
+
+#head { 
+	width: 978px;
+	height: 125px;
+	margin: auto;
+	background-color: transparent;
+	padding-top: 25px;
+	margin-left: 11px;
+	margin-right: 11px;
+}
+
+#logoArea {
+	width: 65%;
+	height: 100px;
+	background-color: transparent;
+	overflow: hidden;
+	float: left;
+}
+
+#logo {
+	width: 300px;
+	display: block;
+	background-color: green;
+}
+
+#headerText {
+	width: 35%;
+	height: 100px;
+	background-color: transparent;
+	overflow: hidden;
+	float: left;
+}
+
+.info {
+	font-size: 17px;
+	line-height: 22px;
+	color: #4F4F4F;
+}
+
+#contentArea {
+	width: 1000px;
+	height: 100%;
+	background-color: transparent;
+}
+
+#titleArea {
+	width: 1000px;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 0px;
+	border-top: 1px solid rgba(26, 26, 26, 1);
+	text-align: center;
+	font-size: 20px;
+	background-color: rgb(26, 26, 26);
+	background: rgb(66, 66, 66); 
+	background: -moz-linear-gradient(top, rgba(56, 54, 54, 1)) 0%, rgba(26, 26, 26, 1) 100%); 
+	background: -webkit-linear-gradient(top, rgba(56, 54, 54, 1) 0%,rgba(26, 26, 26, 1) 100%);  
+	background: linear-gradient(to bottom, rgba(56, 54, 54, 1) 0%,rgba(26, 26, 26, 1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#d3d3d3',GradientType=0 ); 
+	color: #F0F0F0;
+}
+ 
+#machineArea {
+	width: 970px;
+	height: 300px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 15px;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+
+#displayArea {
+	width: 970px;
+	height: 180px;
+	margin-left: 15px;
+	margin-right: 15px;
+	/*border-top: 1px solid #ccc;*/
+	/*border-bottom: 1px solid #ccc;*/
+	/*padding: 10px;*/
+	/*background-color: blue;*/
+}
+
+.coinDiv {
+	height: 273.75px;
+	float: left;
+}
+
+.marL {
+	width: 223.75px;
+	margin-left: 15px;
+	float: left;
+}
+
+.coinTitleDiv {
+	width: 223.75px;
+	height: 50px;
+	float: left;
+}
+
+.coinTitleText {
+	font-size: 25px;
+	text-align: center;
+	line-height: 40px;
+	color: rgb(74, 74, 74);
+}
+
+.coinPic {
+	width: 223.75px;
+	height: 223.75px;
+	border-radius: 120px;
+	float: left;
+	cursor: pointer;
+    overflow: hidden;
+	background-color: rgba(100, 100, 100, 1);
+}
+
+.txt1 {
+	width: 223.75px;
+	height: 223.75px;
+	background-color: rgba(100, 100, 100, 0);
+	line-height: 223.75px;
+	color: white;
+	font-size: 80px;
+	display: none;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.coinPic:hover .txt1 {
+	background-color: rgba(100, 100, 100, 0.6);
+	display: block;
+	-moz-box-shadow: inset 0 0 50px #000000;
+	-webkit-box-shadow: inset 0 0 50px #000000;
+	box-shadow: inset 0 0 50px #000000;
+}
+
+.cR:active .txt1 {
+	background-color: rgba(255, 94, 94, 0.4);
+	display: block;
+}
+
+.cG:active .txt1 {
+	background-color: rgba(201, 255, 173, 0.4);
+	display: block;
+}
+
+#c1 {
+	background-image: url("../pics/penny.jpg");
+}
+
+#c2 {
+	background-image: url("../pics/nickel.jpg");
+}
+
+#c3 {
+	background-image: url("../pics/dime.jpg");
+}
+
+#c4 {
+	background-image: url("../pics/quarter.jpg");
+}
+
+.pic {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: none;
+}
+
+.coinsTotal {
+	width: 230px; /*475px*/
+	height: 100%;
+	float: left;
+	background-color: transparent;
+	border: 1px solid #969696;
+	padding: 10px;
+	margin-right: 15px;
+}
+
+.infoArea {
+	width: 429px; /*475px*/
+	height: 100%;
+	float: left;
+	background-color: transparent;
+	border: 1px solid #969696;
+	padding: 10px;
+	margin-right: 15px;
+}
+
+.resultArea {
+	width: 215px; /*475px*/
+	height: 100%;
+	float: left;
+	border: 1px solid #969696;
+	padding: 10px;
+}
+
+.mt {
+	margin-top: 5px;
+}
+
+.displayBox {
+	width: 82px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	font-size: 20px;
+	cursor: default;
+	line-height: 35px;
+}
+
+.totalTitle {
+	width: 100%;
+	height: 22px;
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.totalSide {
+	width: 125px;
+	font-size: 20px;
+	display: block;
+	float: left;
+	line-height: 35px;
+}	
+
+.totalSideDash {
+	width: 15px;
+	font-size: 15px;
+	display: block;
+	float: left;
+	line-height: 35px;
+}
+
+.infoSide1 {
+	width: 215px;
+	font-size: 20px;
+	line-height: 35px;
+	float: left;
+}	
+
+.infoSide2 {
+	width: 40px;
+	font-size: 20px;
+	line-height: 35px;
+	float: left;
+}
+
+.infoSide3 {
+	width: 100px;
+	font-size: 20px;
+	line-height: 35px;
+	float: left;
+}
+
+.bottlePic {
+	width: 90px;
+	height: 140px;
+	background-image: url(../pics/bottle.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+}
+
+.xMark {
+	width: 35px;
+	height: 140px;
+	float: left;
+	line-height: 140px;
+	font-size: 30px;
+}
+
+.cokeArea {
+	width: 83px; /*345px*/
+	height: 140px;
+	float: left;
+	background-color: transparent;
+}
+
+.cokeResult {
+	line-height: 140px;
+	font-size: 50px;
+}
+
+.resetButton {
+	width: 160px;
+	height: 80px;
+	display: block;
+	outline: none;
+	font-size: 15px;
+	margin-top: 45px;
+	border: 1px solid #ccc;
+	background-image: url(../pics/trash.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #DEDEDE;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.resetButton:hover {
+	background-color: #E3E3E3;
+}
+
+.resetButton:active {
+	background-color: #F2F2F2;
+}
+
+.aa {
+	color: #aaaaaa;
+	display: inline;
+}
+
+.pp {
+	margin: 0px;
+	padding: 0px;
+	cursor: default;
+}
+ 
+#footerArea {
+	width: 1000px;
+	height: 60px;  
+	margin: auto;
+	position: absolute;
+	bottom: 0;
+}
+
+#footerTop {
+	width: 1000px;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	font-size: 14px;
+	font-family: verdana;
+	background-color: #f2f2f2;
+	padding-left: 00px;
+	padding-right: 00px;
+	overflow: hidden;
+	text-align: center;	
+	border-top: 1px solid black;
+}
+
+#footerBot {
+	width: 970px;
+	height: 100%;
+	line-height: 26px;
+	margin: auto;
+	text-align: left;
+	color: white;
+	background-color: black;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
