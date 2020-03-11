@@ -83,8 +83,6 @@ function wastedCoin() {
 	return Math.round((allCoinsDollar() - acceptedCoin() * cokeValue / 100) * 100) / 100;
 }
 
-Math.round((allCoinsDollar() - wastedCoin()) * 100) / 100;
-
 function totalCokeValue() {
 	return Math.round((allCoinsDollar() - wastedCoin()) * 100) / 100;
 }
